@@ -244,7 +244,7 @@ void controlBuzzer()
     unsigned long currentMillis = millis();
     if (currentMillis - previousMillisBuzz >= 1000)
     {
-      toneAC(880, 8, 500, true); //   toneAC( frequency [, volume [, length [, background ]]] ) - Play a note.
+      toneAC(440, 10, 500, true); //   toneAC( frequency [, volume [, length [, background ]]] ) - Play a note.
       previousMillisBuzz = currentMillis;
     }
   }
